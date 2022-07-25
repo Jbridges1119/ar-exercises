@@ -6,7 +6,7 @@ puts "Exercise 3"
 puts "----------"
 
 
-@store3 = Store.find_by(id: 3)
-@store3.destroy
+store = Store.find_by(id: 3)
+store.destroy
 
 puts Store.all.count

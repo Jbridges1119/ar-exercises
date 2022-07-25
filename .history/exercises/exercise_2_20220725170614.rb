@@ -6,6 +6,5 @@ puts "----------"
 
 @store1 = Store.first
 @store2 = Store.second
-p @store1
+ puts @store1
 @store1.update(name: 'Vanvoucer')
-p @store1

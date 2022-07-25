@@ -11,9 +11,5 @@ stores = Store.create(name: "Whistler",annual_revenue: 1900000, mens_apparel: tr
 stores = Store.create(name: "Yaletown",annual_revenue: 430000, mens_apparel: true, womens_apparel: true,)
 
 
-@mens_apparel = Store.where(mens_apparel: true)
+@mens_stores = Store.where(mens_apparel: true).order(timestamps: :desc)
 puts @mens_apparel
-@mens_apparel.each do |store|
-  puts store.name
-  puts store.annual_revenue
-end

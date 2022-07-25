@@ -14,6 +14,6 @@ stores = Store.create(name: "Yaletown",annual_revenue: 430000, mens_apparel: tru
 @mens_apparel = Store.where(mens_apparel: true)
 puts @mens_apparel
 @mens_apparel.each do |store|
-  puts store.name
-  puts store.annual_revenue
+  puts store.name store.annual_revenue
+  puts 
 end
