@@ -9,4 +9,6 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+name = $stdin.gets.chomp
+@stores = Store.create(name: name)
+puts @stores.errors.to_hash
